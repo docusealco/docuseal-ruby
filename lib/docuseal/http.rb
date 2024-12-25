@@ -7,6 +7,8 @@ require 'net/http'
 
 module Docuseal
   class Http
+    USER_AGENT = "DocuSeal Ruby v#{VERSION}"
+
     BODY_METHODS = %i[post put].freeze
 
     attr_reader :config
@@ -51,7 +53,8 @@ module Docuseal
     def headers
       {
         'X-Auth-Token' => config[:key],
-        'Content-Type' => 'application/json'
+        'Content-Type' => 'application/json',
+        'User-Agent' => USER_AGENT
       }
     end
 
