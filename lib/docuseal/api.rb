@@ -14,8 +14,8 @@ module Docuseal
       http.get('/templates', params)
     end
 
-    def get_template(id)
-      http.get("/templates/#{id}")
+    def get_template(id, params = {})
+      http.get("/templates/#{id}", params)
     end
 
     def create_template_from_docx(data)
@@ -58,8 +58,8 @@ module Docuseal
       http.get('/submissions', params)
     end
 
-    def get_submission(id)
-      http.get("/submissions/#{id}")
+    def get_submission(id, params = {})
+      http.get("/submissions/#{id}", params)
     end
 
     def create_submission(data)
@@ -82,8 +82,8 @@ module Docuseal
       http.get('/submitters', params)
     end
 
-    def get_submitter(id)
-      http.get("/submitters/#{id}")
+    def get_submitter(id, params = {})
+      http.get("/submitters/#{id}", params)
     end
 
     def update_submitter(id, data)
