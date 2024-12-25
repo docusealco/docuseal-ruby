@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
     'bug_tracker_uri' => 'https://github.com/docusealco/docuseal-ruby/issues',
     'homepage_uri' => 'https://www.docuseal.com',
     'source_code_uri' => 'https://github.com/docusealco/docuseal-ruby',
-    'documentation_uri' => 'https://www.docuseal.com/docs/api',
+    'documentation_uri' => 'https://www.docuseal.com/docs/api?lang=ruby',
     'rubygems_mfa_required' => 'true'
   }
 
