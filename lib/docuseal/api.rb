@@ -4,7 +4,7 @@ module Docuseal
   class Api
     Error = Class.new(StandardError)
 
-    attr_reader :http
+    private attr_reader :http
 
     def initialize(config)
       @http = Http.new(config)
