@@ -62,6 +62,10 @@ module Docuseal
       http.get("/submissions/#{id}", params)
     end
 
+    def get_submission_documents(id)
+      http.get("/submissions/#{id}/documents")
+    end
+
     def create_submission(data)
       http.post('/submissions/init', data)
     end
