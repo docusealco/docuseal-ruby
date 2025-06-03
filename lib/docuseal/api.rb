@@ -74,6 +74,14 @@ module Docuseal
       http.post('/submissions/emails', data)
     end
 
+    def create_submission_from_pdf(data)
+      http.post('/submissions/pdf', data)
+    end
+
+    def create_submission_from_html(data)
+      http.post('/submissions/html', data)
+    end
+
     def archive_submission(id)
       http.delete("/submissions/#{id}")
     end
