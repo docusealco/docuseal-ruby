@@ -86,6 +86,10 @@ module Docuseal
       http.post('/submissions/docx', data)
     end
 
+    def update_submission(id, data)
+      http.put("/submissions/#{id}", data)
+    end
+
     def archive_submission(id)
       http.delete("/submissions/#{id}")
     end
