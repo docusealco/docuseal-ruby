@@ -283,7 +283,7 @@ Docuseal.get_submitter(500001)
 Allows you to update submitter details, pre-fill or update field values and re-send emails.
 
 **Related Guides:**<br>
-[Automatically sign documents via API](https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically_sign_documents_via_api)
+[Automatically sign documents via API](https://www.docuseal.com/guides/pre-fill-pdf-document-form-fields-with-api#automatically-sign-documents-via-api)
 
 
 ```ruby
